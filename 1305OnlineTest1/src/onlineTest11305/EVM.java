@@ -33,7 +33,7 @@ public class EVM {
 	 }
 	 
 	 public void resetCounter(){
-		 
+		 CU.reset();
 	 }
 	 
 	

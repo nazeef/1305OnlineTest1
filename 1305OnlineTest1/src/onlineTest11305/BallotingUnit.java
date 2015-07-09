@@ -23,6 +23,7 @@ public class BallotingUnit {
 		
 		if(ready.getState().equals("Ready")){
 			slots.get(candNo).blue.click();
+			slots.get(candNo).lamp.setState("Blinking");
 			return 1;
 		}
 		return 0;

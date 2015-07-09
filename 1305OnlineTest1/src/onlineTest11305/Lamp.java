@@ -2,7 +2,7 @@ package onlineTest11305;
 
 public class Lamp {
 
-	private String state="ON";
+	protected String state="ON";
 
 	public String getState() {
 		return state;
