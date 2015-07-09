@@ -1,7 +1,11 @@
 package onlineTest11305;
 
-public class EVM {
+public class EVM {       
 
+	//  Acts as proxy class for control unit and balloting unit
+	//  Also acts as facade main class as simplifies interface
+	
+	
 	 ControlUnit CU;
 	 BallotingUnit BU;
 	 
@@ -39,8 +43,6 @@ public class EVM {
 	 public void resetCounter(){
 		 CU.reset();
 	 }
-	 
-	
-	 
+	 	 
 	 
 }

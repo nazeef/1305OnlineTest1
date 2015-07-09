@@ -7,6 +7,7 @@ import org.junit.Test;
 public class EVMTest {
 
 	EVM evm=new EVM(3);
+	
 	@Test
 	public void testTotalCount() {
 		evm.addCandidate("mario",0);
