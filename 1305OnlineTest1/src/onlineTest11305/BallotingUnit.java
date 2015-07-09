@@ -18,4 +18,13 @@ public class BallotingUnit {
 	public void addCandidate(String name,int index){
 		 slots.get(index).cand.setName(name);
 	}
+	
+	public int allowVoting(int candNo){
+		
+		if(ready.getState().equals("Ready")){
+			slots.get(candNo).blue.click();
+			return 1;
+		}
+		return 0;
+	}
 }

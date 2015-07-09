@@ -1,5 +1,5 @@
 package onlineTest11305;
 
-public class BusyLamp {
+public class BusyLamp  extends Lamp{
 
 }

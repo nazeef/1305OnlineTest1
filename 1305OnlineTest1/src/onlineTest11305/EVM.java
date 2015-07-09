@@ -15,13 +15,13 @@ public class EVM {
 		 BU.addCandidate(name, ind);
 	 }
 	 
-	 public void vote(int candNo){
-		 
+	 public void vote(int candNo){         // voting
+		 CU.allowVoting(BU, candNo);
 	 }
 	 
 	 public int totalCount(){
 		 
-		return 0;		 
+		return CU.getTotalVotes();		 
 	 }
 	 
 	 public void closePoll(){
@@ -29,7 +29,7 @@ public class EVM {
 	 }
 	 
 	 public void readResult(){
-		 
+		 CU.displayResult(BU,3);
 	 }
 	 
 	 public void resetCounter(){
