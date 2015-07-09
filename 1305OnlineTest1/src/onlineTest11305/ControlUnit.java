@@ -28,7 +28,7 @@ public class ControlUnit {
 		
 		busy.setState("Off");
 	    BU.ready.setState("Off");
-		
+		System.out.println("---------------");
 	}
 	
 	
@@ -47,6 +47,12 @@ public class ControlUnit {
 		for(int i=0;i<numOfCand;i++){
 			System.out.println(BU.slots.get(i).cand.getName()+" ==> "+count[i]);
 		}
+	}
+	
+//  display result candidate wise-------------------------
+	public int displayResultEachCandidate(int num){
+		return count[num];
+	
 	}
 	
 	//  reset

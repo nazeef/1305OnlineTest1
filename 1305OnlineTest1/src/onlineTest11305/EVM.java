@@ -25,7 +25,11 @@ public class EVM {
 	 }
 	 
 	 public void closePoll(){
-		 
+		 CU.reset();
+	 }
+	 
+	 public int readResultEachCandidate(int candNo){
+		 return CU.displayResultEachCandidate(candNo);
 	 }
 	 
 	 public void readResult(){
