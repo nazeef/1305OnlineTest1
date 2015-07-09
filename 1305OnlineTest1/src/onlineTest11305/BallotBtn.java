@@ -1,11 +1,12 @@
 package onlineTest11305;
 
-public class BallotBtn  implements Button{
+public class BallotBtn  extends Button{
 
-	@Override
-	public void click() {
+	
+	public void click(BallotingUnit BU) {
 		// TODO Auto-generated method stub
 		System.out.println("Ballot button clicked");
+		BU.ready.setState("Ready");
 	}
 
 }

@@ -1,6 +1,8 @@
 package onlineTest11305;
 
-public interface Button {
+public abstract class Button {
 
-	public void click();
+	public void click(){
+		
+	}
 }

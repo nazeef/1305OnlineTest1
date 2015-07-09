@@ -14,11 +14,11 @@ public class ControlUnit {
 	int totalVotes=0;	
 	
 
-	                  // voting
+// -------------------------------voting process----------------------------
+	
 	public void allowVoting(BallotingUnit BU,int candNo){
-		ballot.click();
+		ballot.click(BU);
 		busy.setState("On");
-		BU.ready.setState("Ready");
 		
 		if(BU.allowVoting(candNo)==1){		 // check if vote casted
 		   count[candNo]++;
@@ -41,7 +41,8 @@ public class ControlUnit {
 		this.totalVotes = totalVotes;
 	}
 	
-	//   display result-------------------------
+	
+	//   --------------display result-------------------------
 	public void displayResult(BallotingUnit BU,int numOfCand){
 		
 		for(int i=0;i<numOfCand;i++){
@@ -49,7 +50,7 @@ public class ControlUnit {
 		}
 	}
 	
-//  display result candidate wise-------------------------
+    // ------------- display result candidate wise-------------------------
 	public int displayResultEachCandidate(int num){
 		return count[num];
 	
