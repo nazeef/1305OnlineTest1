@@ -1,6 +1,6 @@
 package onlineTest11305;
 
-public class BlueButton implements Button{
+public class TotalBtn implements Button{
 
 	@Override
 	public void click() {

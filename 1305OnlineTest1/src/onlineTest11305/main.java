@@ -6,7 +6,11 @@ public class main {
 		// TODO Auto-generated method stub
         EVM evm=new EVM(2);
         evm.addCandidate("a",0);
-        //System.out.println(evm.BU.slots.get(0).cand.getName());
+        evm.addCandidate("b",1);
+        evm.addCandidate("c",2);
+      //  System.out.println(evm.BU.slots.get(0).cand.getName());
+        
+        
 	}
 
 }

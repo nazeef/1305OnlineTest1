@@ -2,7 +2,7 @@ package onlineTest11305;
 
 public class BUReadyLamp {
 	
-	String state="ON";
+	private String state="ON";
 
 	public String getState() {
 		return state;
